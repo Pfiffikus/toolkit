@@ -142,9 +142,9 @@ Path to the public certificate to use for the [TLS Proxy](tls-proxy.md).
 
 ### `NGINX_TLS_LISTEN_IP`
 
-Sets the host IP address(es) that the [TLS Proxy](tls-proxy.md) container will bind to for https. For example, if this is set to `0.0.0.0` then the https web interface will be available on any host IP address.
+Sets the _numeric_ host IP address(es) that the [TLS Proxy](tls-proxy.md) container will bind to for https. For example, if this is set to `0.0.0.0` then the https web interface will be available on any host IP address.
 
-Typically this should be set to the external IP of your host.
+Typically this should be set to the _numeric_ external IP of your host.
 
 - Default: `127.0.1.1`
 
@@ -156,9 +156,9 @@ Sets the host port that the [TLS Proxy](tls-proxy.md) container will bind to for
 
 ### `NGINX_HTTP_LISTEN_IP`
 
-Sets the host IP address(es) that the [TLS Proxy](tls-proxy.md) container will bind to for http redirect. For example, if this is set to `127.0.1.1` then http connections to `127.0.1.1` will be redirected to the https web interface.
+Sets the _numeric_ host IP address(es) that the [TLS Proxy](tls-proxy.md) container will bind to for http redirect. For example, if this is set to `127.0.1.1` then http connections to `127.0.1.1` will be redirected to the https web interface.
 
-Typically this should be set to the external IP of your host. Do not set it to `0.0.0.0` as this will typically cause a conflict with `SHARELATEX_LISTEN_IP`.
+Typically this should be set to the _numeric_ external IP of your host. Do not set it to `0.0.0.0` as this will typically cause a conflict with `SHARELATEX_LISTEN_IP`.
 
 - Default: `127.0.1.1`
 
